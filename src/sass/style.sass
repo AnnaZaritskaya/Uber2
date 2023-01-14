@@ -183,10 +183,24 @@ nav
   line-height: 21px
   color: #202020
 
-.capability_icon
-  max-width: 100%
-  ::before
+
+.fa-key
+  background: url(../../src/icon/key.png) center center/cover no-repeat
+
+.fa
+  position: relative
+  display: flex
+  justify-content: center
+  width: 54px
+  height: 78px
+  margin: 0 пш49px
+  &::after
+    content: ""
+    position: absolute
     width: 116px
     height: 116px
     background: #1EACC7
-    border-radius: 20px;
+    border-radius: 60px
+    z-index: -5
+    bottom: -20px
+
