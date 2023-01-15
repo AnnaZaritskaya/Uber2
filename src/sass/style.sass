@@ -1,6 +1,38 @@
 @import 'reset.sass'
 @import 'fonts.sass'
 
+.label
+  margin: 0 auto
+  height: 24px
+  width: 124px
+  padding: 5px 12px
+  background-color: #000000
+  color: #fff
+  font-size: 11px
+  font-weight: 300
+  text-transform: uppercase
+  text-align: center
+
+.title
+  margin-bottom: 0
+  margin-top: 38px
+  color: #222
+  font-size: 38px
+  font-weight: 700
+  text-transform: uppercase
+  text-align: center
+
+.subtitle
+  margin-top: 19px
+  font-weight: 400
+  font-size: 17px
+  text-align: center
+  color: #222222
+
+
+
+
+
 body
   font-family: 'Roboto'
 
@@ -149,27 +181,25 @@ nav
 .capability
   margin: 18px 0 67px 0
 
-.capability_descr
-  display: block
-  padding: 2px 1px
-  margin: 0 auto
-  width: 113px
-  font-weight: 400
-  font-size: 11px
-  text-align: center
-  text-transform: uppercase
-  color: #FFFFFF
-  mix-blend-mode: normal
-  background: #000000
+.capability_label
+  // display: block
+  // padding: 2px 1px
+  // margin: 0 auto
+  // width: 113px
+  // font-weight: 400
+  // font-size: 11px
+  // text-align: center
+  // mix-blend-mode: normal
+  // background: #000000
 
 .capability_header
-  margin-top: 32px
-  margin-bottom: 16px
-  font-weight: 700
-  font-size: 38px
-  text-align: center
-  text-transform: uppercase
-  color: #222222
+  // margin-top: 32px
+  // margin-bottom: 16px
+  // font-weight: 700
+  // font-size: 38px
+  // text-align: center
+  // text-transform: uppercase
+  // color: #222222
 
 .capability_title
   margin-top: 16px
@@ -228,3 +258,55 @@ nav
 
 .fa-timeline
   background-image: url(../../src/icon/timeline.png)
+
+
+// Sass
+
+.mobile
+  min-height: 864px
+  padding: 48px 0 79px 0
+  background: url(../../src/img/mobile_bg.jpg) center (center/cover) no-repeat
+  .row
+    margin-top: 32px
+  &_item
+    position: relative
+    width: 320px
+    height: 280px
+    margin: 0 auto
+    margin-bottom: 19px
+    padding-top: 92px
+    &_1
+      background: url(../../src/img/card_1.jpg) center (center/cover) no-repeat
+    &_2
+      background: url(../../src/img/card_2.jpg) center (center/cover) no-repeat
+    &_3
+      background: url(../../src/img/card_3.jpg) center (center/cover) no-repeat
+    &_4
+      background: url(../../src/img/card_4.jpg) center (center/cover) no-repeat
+    &_5
+      background: url(../../src/img/card_5.jpg) center (center/cover) no-repeat
+    &_6
+      background: url(../../src/img/card_6.jpg) center (center/cover) no-repeat
+    &_subtitle
+      font-weight: 400
+      font-size: 24px
+      text-align: center
+      text-transform: uppercase
+      color: #FFFFFF
+    &_plus
+      display: flex
+      justify-content: center
+      align-items: center
+      position: absolute
+      bottom: 35px
+      left: 50%
+      transform: translateX(-50%)
+      width: 29px
+      height: 29px
+      background: #000000
+      margin: 0 auto
+      border-radius: 100%
+      // padding: 6px
+      cursor: pointer
+      img
+        // width: 100%
