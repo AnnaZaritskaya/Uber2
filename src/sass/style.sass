@@ -374,3 +374,53 @@ nav
     line-height: 24px
     text-align: center
     color: #222222
+
+.require
+  padding: 68px 0 84px 0
+  &_block
+    margin: 33px 0
+    &_nmb
+      margin-bottom: 0px
+  &_title
+    font-weight: 400
+    font-size: 22px
+    color: #1CA8C3
+  &_list
+    list-style-type: none
+    padding-left: 50px
+    margin-top: 22px
+    li
+      position: relative
+      font-weight: 300
+      font-size: 17px
+      line-height: 24px
+      color: #222222
+      margin-bottom: 10px
+      &:before
+        content: ""
+        display: block
+        position: absolute
+        left: -32px
+        top: 3px
+        // top: 50%
+        // transform: translateY(-50%)
+        // display: inline-block
+        // vertical-align: middle
+        // transform: translate(-5px, -2px)
+        width: 21px
+        height: 20px
+        background: url(../../src/icon/check_blue.svg) center (center/cover) no-repeat
+  &_descr
+    margin-top: 25px
+    font-weight: 300
+    font-size: 17px
+    line-height: 24px
+    color: #1CA8C3
+  .warning
+    .require_title
+      color: $color_pink
+    .require_list
+      li
+        &:before
+          background: url(../../src/icon/check_red.svg) center (center/cover) no-repeat
+
