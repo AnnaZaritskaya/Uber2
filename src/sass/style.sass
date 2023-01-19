@@ -429,15 +429,56 @@ nav
   background: url(../../src/img/world_bg.jpg) center (center/contain) no-repeat
   background-color: #080816
   min-height: 720px
-  .label
-    background: #FFFFFF
-    color: #070716
-  .title, .subtitle
-    color: #FFFFFF
-  .map_ref
-    position: absolute
-    font-weight: 400
-    font-size: 15px
-    text-align: center
-    text-transform: uppercase
-    color: #1FBAD6
+  .container
+    display: flex
+    flex-direction: column
+    height: 100%
+    .map_title
+      flex: 1 0 auto
+      min-height: 600px
+      .label
+        background: #FFFFFF
+        color: #070716
+      .title, .subtitle
+        color: #FFFFFF
+    .map_ref
+        flex: 0 0 auto
+        font-weight: 400
+        font-size: 15px
+        text-align: center
+        text-transform: uppercase
+        color: #1FBAD6
+        padding-bottom: 50px
+        text-decoration: none
+        &:hover
+          color: $color_blue
+footer
+  display: flex
+  justify-content: space-between
+  padding: 53px 23px 40px 23px
+  min-height: 134px
+  .footer_content
+
+    .footer_menu
+      display: flex
+      justify-content: space-between
+      padding-bottom: 17px
+      & a
+        font-weight: 300
+        font-size: 15px
+        text-transform: uppercase
+        text-decoration: none
+        color: #070716
+    .footer_info
+      & a
+        font-weight: 300
+        font-size: 11px
+        text-transform: uppercase
+        text-decoration: none
+        color: #999999
+    & a
+      font-weight: 400
+      font-size: 11px
+      text-decoration: none
+      text-transform: uppercase
+      color: #1FBAD6
