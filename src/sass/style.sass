@@ -244,7 +244,7 @@ nav
   align-items: center
 
 
-.fa
+.far
   margin-top: 27px
   margin: 0 49px
   background-position: center
@@ -254,28 +254,28 @@ nav
   height: 116px
   border-radius: 60px
 
-.fa-key
+.far-key
   background-image: url(../../src/icon/key.png)
 
-.fa-car
+.far-car
   background-image: url(../../src/icon/car.png)
 
-.fa-day
+.far-day
   background-image: url(../../src/icon/day.png)
 
-.fa-map
+.far-map
   background-image: url(../../src/icon/map.png)
 
-.fa-money
+.far-money
   background-image: url(../../src/icon/money.png)
 
-.fa-phone
+.far-phone
   background-image: url(../../src/icon/phone.png)
 
-.fa-purse
+.far-purse
   background-image: url(../../src/icon/purse.png)
 
-.fa-timeline
+.far-timeline
   background-image: url(../../src/icon/timeline.png)
 
 
@@ -457,8 +457,24 @@ footer
   justify-content: space-between
   padding: 53px 23px 40px 23px
   min-height: 134px
+.footer_icon
+  min-width: 139px
+  display: flex
+  justify-content: space-between
+  & .fa_messenger
+    width: 20px
+    height: 20px
+    padding-right: 20px
   .footer_content
-
+    position: relative
+    min-width: 390px
+    &:before
+      content: ""
+      position: absolute
+      top: -42px
+      left: 37px
+      width: 300px
+      border-bottom: 7px solid #1FBAD6
     .footer_menu
       display: flex
       justify-content: space-between
@@ -469,14 +485,24 @@ footer
         text-transform: uppercase
         text-decoration: none
         color: #070716
+        &:hover
+          color: $color_pink
     .footer_info
+      display: flex
+      justify-content: space-between
+      padding-bottom: 17px
       & a
         font-weight: 300
         font-size: 11px
         text-transform: uppercase
         text-decoration: none
         color: #999999
+        &:hover
+          color: $color_blue
     & a
+      margin: 0 auto
+      display: flex
+      justify-content: center
       font-weight: 400
       font-size: 11px
       text-decoration: none
